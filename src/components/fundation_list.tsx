@@ -33,7 +33,7 @@ const FoundationsList: React.FC = () => {
   }
 
   return (
-    <div className="flex flex-col items-center gap-2 p-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
       {foundations.map((foundation) => (
         <Card key={foundation.id} foundation={foundation} />
       ))}

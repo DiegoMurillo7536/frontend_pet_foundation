@@ -14,3 +14,16 @@ export interface FoundationResponse {
     };
     status_code: number;
 }
+
+export interface FoundationGoals {
+    actual_amount: number;
+    goal_amount: number;
+}
+
+export interface GoalsFromFoundationResponse {
+    message: string;
+    data: {
+        goals: Array<FoundationGoals>;
+    };
+    status_code: number;
+}
